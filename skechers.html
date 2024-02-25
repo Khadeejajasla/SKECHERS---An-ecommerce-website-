@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Skechersmen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            
+            min-height: 100vh;
+            background-color: rgb(187, 180, 164);
+            /* Set minimum height of body to full viewport height */
+        }
+
+        main {
+            flex: 1;
+            /* Expand main section to fill remaining space */
+        }
+
+        .product {
+            position: relative;
+            /* Set position relative for positioning close button */
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+            /* Push footer to the bottom */
+        }
+
+        les */ body {
+            /* font-family: Arial, sans-serif; */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: bisque;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 4px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product {
+            width: 300px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .product h2 {
+            margin-top: 10px;
+            font-size: 1.6em;
+        }
+
+        .product p {
+            font-size: 1.2em;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #add-to-cart-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><B><I>S K E C H E R S</I></B></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skechers2.html">Women</a></li>
+                <li><a href="skechers.html">Men</a></li>
+                <li><a href="skechers4.html">My account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/25921930/2023/12/26/370d28b2-9c41-4835-8c39-698e46ac1b541703577789788-Skechers-Men-Sports-Shoes-3621703577789563-1.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men GO RUN SWIRL Running sports shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/18906744/2022/9/12/ac80f03c-123a-4003-aac0-571825d82a001662981170441-Skechers-Women-Casual-Shoes-151662981169943-1.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men GO WALK Sports shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://static-ssp.supersports.co.th/media/catalog/product/s/s/ssp64929071-2.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men GO WALK Flex shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/14375346/2022/3/28/c4c62042-69ed-427a-a649-59d36abf441c1648464949557-Skechers-Men-Casual-Shoes-6301648464949166-1.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men Walking shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="https://img.tatacliq.com/images/i13/437Wx649H/MP000000016991952_437Wx649H_202309150051351.jpeg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men GO RUN SWIRL sports shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20230206/1VwQ/63e11d00f997dd708e3c0eae/-473Wx593H-469325477-navy-MODEL.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men EQUALIZER <br> SWIRL Running shoes</p >
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://img.tatacliq.com/images/i13/437Wx649H/MP000000016991948_437Wx649H_202309150010211.jpeg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men Sports shoes</p></p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/26026344/2023/12/26/cc1a22c2-9e44-4002-88bc-4c569e739a901703577838397-Skechers-Men-Sports-Shoes-4371703577838064-1.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men GO RUN Sports shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/images/style/properties/Skechers-Men-Black-Propulsion-Sports-Shoes_c0b94c93f1621b653040cf69af529bb5_images.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men Running shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/26026350/2023/12/26/0ef66273-fb18-48f0-a9a6-6d5968464d651703577845308-Skechers-Men-Sports-Shoes-7461703577845109-1.jpg"
+                alt="Product 1">
+            <button class="close-btn">&times;</button>
+            <h2><i>SKECHERS</i></h2>
+            <p>Men walking Sports shoes</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+
+        <!-- More product sections can be added here -->
+    </main>
+
+    <footer>
+        <p>&copy; SKECHERS online Store. All rights reserved.</p>
+    </footer>
+
+    <!-- Hidden pop-up section -->
+    <div id="add-to-cart-popup">
+        <p>Item added to cart successfully!</p>
+        <button id="close-popup">Close</button>
+    </div>
+
+    <script>
+        // JavaScript to handle showing and hiding of the pop-up
+        document.addEventListener("DOMContentLoaded", function () {
+            const addToCartButtons = document.querySelectorAll(".add-to-cart");
+            const popup = document.getElementById("add-to-cart-popup");
+            const closePopupButton = document.getElementById("close-popup");
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    popup.style.display = "block";
+                });
+            });
+
+            closePopupButton.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+        });
+    </script>
+</body>
+
+</html>

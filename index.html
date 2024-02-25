@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>E-Commerce Homepage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <style>/* Resetting default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height of body to full viewport height */
+            background-color:  rgb(187, 180, 164);
+        }
+        
+        header {
+            background-color: #333;
+            color: bisque;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 4px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 600px; /* Limiting maximum height of images */
+            display: block;
+            margin-bottom: 20px;
+        }
+        
+        .text {
+            margin-top: 20px;
+        }
+        
+        footer {
+            background-color: #333;
+            color:bisque;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto; /* Push footer to the bottom */
+            width: 100%;
+        }
+        </style>
+</head>
+<body>
+    <header><centre>
+        <h1><B><I>S K E C H E R S</I></B></h1>
+
+        <nav>
+            <ul><br>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skechers2.html">Women</a></li>
+                <li><a href="skechers.html">Men</a></li>
+                <li><a href="skechers4.html">My account</a></li>
+
+                </br>
+            </ul>
+        </nav>
+    </centre>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <img src="https://pbs.twimg.com/media/FMMwJ_XXIAIEnRL.png" alt="Image 1">
+                <div class="text">
+                    <h2>Discover the Latest Trends</h2>
+                    <p>Lifestyle and athletic footware and apparel for men and women <br>filled with innovative comfort technologies</p>
+                </div>
+            </div>
+        </section>
+    
+            <section class="hero">
+                <div class="container">
+                    <img src="https://image.skechers.com/img/productimages/xlarge/124401_GYLV_B.jpg" alt="Image 1">
+                </div>
+            </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; skechers online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
